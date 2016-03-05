@@ -4,7 +4,7 @@
   "description": "Nodejs frontend app for my personal web",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack --watch && webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

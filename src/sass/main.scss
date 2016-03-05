@@ -2,13 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 @import "variables";
 @import "layout";
-
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  color: $base-font-color;
-}
-
-body {
-  font-size: 1rem;
-}
+@import "mixins";
+@import "navigation";
+@import "typography";
+@import "structure";
+@import "blog";

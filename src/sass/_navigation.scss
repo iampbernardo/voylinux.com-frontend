@@ -1,0 +1,18 @@
+.main-navigation {
+  @include center;
+  ul {
+    li{
+      display: inline;
+      line-height: 1em;
+      padding: 0 1em;
+      a{
+        color: $grey-light; // Change to a variable
+        transition: color .2s linear;
+        padding: 0 .5em;
+        &:hover{
+          color: $grey;
+        }
+      }
+    }
+  }
+}

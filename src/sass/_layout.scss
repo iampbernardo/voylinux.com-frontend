@@ -1,8 +1,4 @@
-@for $i from 1 to 6{
-  h#{$i} {
-      font-weight: $headings-font-weight;
-  }
-}
+
 
 a {
   text-decoration: none;
@@ -16,19 +12,7 @@ nav {
   }
 }
 
-.main-navigation {
-  background-color: #F2F2F2;
-  ul {
-    li{
-      display: inline;
-      line-height: 1em;
-      padding: 0 1em;
-      a{
-        color: lighten($base-font-color, 30%); // Change to a variable
-      }
-    }
-  }
-}
+
 .site-name {
   font-size: 1.3em;
 }
@@ -71,9 +55,11 @@ main {
 .text-center {
   text-align: center;
 }
+
 header {
   padding: 2em 0;
 }
+
 footer {
   clear: both;
   background-color: #FAFAFA;
@@ -98,7 +84,7 @@ article {
 }
 
 article > * {
-  flex: 1 100%;
+  //flex: 1 100%;
 }
 
 article {
@@ -127,12 +113,14 @@ article {
   }
 }
 
+/*
 img {
   max-width: 100%;
   display: block;
-  margin: 3em;
+  margin: 3em auto;
   height: auto;
 }
+*/
 .container {
   flex: 1;
   margin: auto;

@@ -1,10 +1,35 @@
 /* Colors */
-$base-font-color: rgb(68, 68, 68);
+
+/* Five shades of grey :P */
+$grey: rgb(68, 68, 68);
+$grey-dark: darken($grey, 5%);
+$grey-medium: lighten($grey, 20%);
+$grey-light: lighten($grey-medium, 20%);
+
+
+$base-font-color: $grey;
 
 $blue-clear: rgb(85,170,221);
 $red-dark: rgb(158,9,30);
 
+/* Media queries */
+// Inspired by Bootstrap grid breakpoints
+$screen-xs-min: 0px;
+$screen-xs-max: 544px;
+$screen-sm-min: $screen-xs-max;
+$screen-sm-max: 768px;
+$screen-md-min: $screen-sm-max;
+$screen-md-max: 992px;
+$screen-lg-min: $screen-md-max;
+$screen-lg-max: 1200px;
+$screen-xl-min: $screen-lg-max;
+
+
+
 /* font weights */
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 16px;
 
 $headings-font-weight: 600;
 
