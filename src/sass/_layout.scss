@@ -1,0 +1,34 @@
+@for $i from 1 to 6{
+  h#{$i} {
+      font-weight: $headings-font-weight;
+  }
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+
+.site-title {
+  font-size: $site-title-size;
+}
+
+.section-title {
+  font-size: $section-title-size;
+}
+
+main {
+  min-height: 75vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $lg-max-width;
+}

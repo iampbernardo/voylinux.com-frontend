@@ -1,0 +1,32 @@
+{
+  "name": "voylinux.com-frontend",
+  "version": "1.0.0",
+  "description": "Nodejs frontend app for my personal web",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voylinux/voylinux.com-frontend.git"
+  },
+  "author": "@voylinux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/voylinux/voylinux.com-frontend/issues"
+  },
+  "homepage": "https://github.com/voylinux/voylinux.com-frontend#readme",
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "normalize-scss": "^4.0.3",
+    "sass-loader": "^3.1.2",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
+    "support-for": "^1.0.3"
+  }
+}

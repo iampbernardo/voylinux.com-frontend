@@ -1,0 +1,10 @@
+@import "lib/normalize/normalize";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import "variables";
+@import "layout";
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $base-font-color;
+}
