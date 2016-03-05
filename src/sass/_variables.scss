@@ -1,5 +1,8 @@
 /* Colors */
-$base-font-color: #444;
+$base-font-color: rgb(68, 68, 68);
+
+$blue-clear: rgb(85,170,221);
+$red-dark: rgb(158,9,30);
 
 /* font weights */
 
@@ -9,7 +12,7 @@ $headings-font-weight: 600;
 
 
 /* Layout */
-$lg-max-width: 960px;
+$lg-max-width: 960px;/* 960px % 16px */
 
 /* sections */
 $site-title-size: 3em;

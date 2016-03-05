@@ -4,11 +4,50 @@
   }
 }
 
+a {
+  text-decoration: none;
+  color: $base-font-color;
+}
+
+nav {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+.main-navigation {
+  background-color: #F2F2F2;
+  ul {
+    li{
+      display: inline;
+      line-height: 1em;
+      padding: 0 1em;
+      a{
+        color: lighten($base-font-color, 30%); // Change to a variable
+      }
+    }
+  }
+}
+.site-name {
+  font-size: 1.3em;
+}
+
+.site-description {
+  color: lighten($base-font-color, 30%);
+  margin-top: 0;
+}
+
 b,
 strong {
   font-weight: 700;
 }
 
+.circle {
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+}
 
 .site-title {
   font-size: $site-title-size;
@@ -17,18 +56,90 @@ strong {
 .section-title {
   font-size: $section-title-size;
 }
-
+.mark {
+  color: $red-dark;
+  font-weight: 600;
+}
 main {
-  min-height: 75vh;
+  a {
+    color: $blue-clear;
+  }
+
+
 }
 
 .text-center {
   text-align: center;
 }
+header {
+  padding: 2em 0;
+}
+footer {
+  clear: both;
+  background-color: #FAFAFA;
+  border-top: 1px solid #E3E3E3;
+  padding: 3em 0;
+  margin-top: 5em;
+}
 
-.container {
+main {
   display: block;
+  max-width: 960px;
   margin: 0 auto;
   width: 100%;
+}
+
+article {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+
+article > * {
+  flex: 1 100%;
+}
+
+article {
+  @for $i from 1 to 6{
+    h#{$i} {
+        text-align: center;
+    }
+  }
+
+  @for $i from 2 to 6{
+    h#{$i} {
+        border-bottom: 3px solid #F2F2F2;
+        max-width: 80%;
+        text-align: center;
+        margin: 1em auto;
+        padding-bottom: .5em;
+    }
+  }
+
+  p {
+    /* 650px / 960px * 100= 67% */
+    font-size: 1em;
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 3em;
+  height: auto;
+}
+.container {
+  flex: 1;
+  margin: auto;
+  width: 100%;
   max-width: $lg-max-width;
+}
+
+.section-title {
+  text-align: center;
 }
