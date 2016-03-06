@@ -4,7 +4,7 @@ module.exports = {
     src: ["./src/entry.js"]
   },
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "public/javascripts"),
     publicPath: "/assets/",
     filename: "bundle.js"
   },
@@ -18,6 +18,10 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"
+      },
+      {
+        test: /\.html$/,
+        loader: "html"
       }
     ]
   },

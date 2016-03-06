@@ -1,0 +1,28 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    meta(name="description", content!=metaContent)
+    meta(name="wiewport", content="width=device-width, inicial-scale=1.0")
+    title Voylinux webpage
+  body 
+    nav
+      ul
+        li: a(href="#") bio
+        li: a(href="#") blog
+        li: a(href="#") experiencia
+        li: a(href="#") proyectos
+    header(itemscope, itemtype="https://schema.org/WPHeader", class="container blog-metta")
+      .site-name
+        a(href="#")
+          b voylinux
+          span .com
+      p(class="site-description").
+        ¿Y quién ha dicho que quiero ser normal?
+      .header-author.container
+        .text-center
+          img.circle(src="https://secure.gravatar.com/avatar/14f3f802a2dce7abec7fa9b5440179c3?s=100&d=mm&r=g", alt="Pablo Bernardo")
+        
+    #container #{app}
+    script(src="javascripts/bundle.js")
+  

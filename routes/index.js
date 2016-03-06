@@ -3,9 +3,10 @@ var router = express.Router();
 
 function renderApp(req, res) {
   res.render(
-    'index',
+    'app',
     {
-      title: 'Voylinux'
+      app: 'This will be content from my WordPress installation',
+      metaContent : '¿Quién ha dicho que quiero ser normal'
     }
   );
 }

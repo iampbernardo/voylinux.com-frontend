@@ -5,18 +5,17 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cons = require('consolidate');
+var serveStatic = require('serve-static');
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
 
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.engine('html', cons.lodash);
-app.set('view engine', 'html');
-
+app.set('view engine', 'jade');
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -30,7 +29,7 @@ app.use(require('node-sass-middleware')({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(express.static(path.join(__dirname, 'build')));
 app.use('/', routes);
 app.use('/users', users);
 
@@ -65,10 +64,8 @@ app.use(function(err, req, res, next) {
   });
 });
 
+// TODO: Move this to a port in a config file
 let port = 3000;
-app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
 
 app.listen(port, function () {
   console.log('Example app listening on port 3000!');
