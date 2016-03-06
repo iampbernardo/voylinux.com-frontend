@@ -6,7 +6,7 @@ html(lang="es")
     meta(name="wiewport", content="width=device-width, inicial-scale=1.0")
     title Voylinux webpage
   body 
-    nav
+    nav.main-navigation
       ul
         li: a(href="#") bio
         li: a(href="#") blog
@@ -23,6 +23,8 @@ html(lang="es")
         .text-center
           img.circle(src="https://secure.gravatar.com/avatar/14f3f802a2dce7abec7fa9b5440179c3?s=100&d=mm&r=g", alt="Pablo Bernardo")
         
-    #container #{app}
+    main #{app}
+    footer(itemscope, itemtype="https://schema.org/WPFooter")
+      .container.text-center ¿Quién ha dicho que quiero ser normal?
     script(src="javascripts/bundle.js")
   
