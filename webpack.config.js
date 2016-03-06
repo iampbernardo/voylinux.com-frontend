@@ -13,10 +13,15 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: ["style", "css", "sass"]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
       }
     ]
   },
   sassLoader: {
     includePaths: [path.resolve(__dirname, "src/sass")]
   }
-}
+};
