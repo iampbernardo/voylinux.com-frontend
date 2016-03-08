@@ -18,3 +18,6 @@ new personal web page.
 - **React** to wrap things in reusable components.
 - **Sass** as a CSS pre-processor. (Who writes plain CSS nowadays?)
 - **Webpack** to create a bundle with all my styles and JS
+
+## Instructions:
+By now, beacuse of a webpack missing configuration, lets start the app with 'node app.es6.js'
