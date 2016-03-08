@@ -1,4 +1,5 @@
 var path = require('path');
+var autoprefixer = require('autoprefixer');
 module.exports = {
   entry: {
     src: ["./src/entry.js"]
@@ -12,7 +13,7 @@ module.exports = {
     loaders: [
       {
         test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
+        loaders: ["style", "css", "sass", "postcss-loader"]
       },
       {
         test: /\.js$/,
@@ -24,6 +25,9 @@ module.exports = {
         loader: "html"
       }
     ]
+  },
+  postcss: function () {
+        return [autoprefixer];
   },
   sassLoader: {
     includePaths: [path.resolve(__dirname, "src/sass")]
