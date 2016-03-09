@@ -1,3 +1,10 @@
+nav {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
 .main-navigation {
   @include center;
   ul {

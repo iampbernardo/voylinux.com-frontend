@@ -1,0 +1,26 @@
+ul.social-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 20%;
+  margin: 0 auto;
+  li {
+    flex: 1;
+    font-size: 2em;
+    a {
+      i{
+        color: $grey-medium;
+        transition: color .12s linear;
+        @each $social in github, linkedin, instagram, spotify {
+          &.fa-#{$social} {
+            &:hover {
+              color: #{map-get($social-colors, $social)};
+            }
+          }
+        }
+      }
+    }
+  }
+}

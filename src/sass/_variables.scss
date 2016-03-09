@@ -5,12 +5,9 @@ $grey: rgb(68, 68, 68);
 $grey-dark: darken($grey, 5%);
 $grey-medium: lighten($grey, 20%);
 $grey-light: lighten($grey-medium, 20%);
-
-
-$base-font-color: $grey;
-
 $blue-clear: rgb(85,170,221);
 $red-dark: rgb(158,9,30);
+
 
 /* Media queries */
 // Inspired by Bootstrap grid breakpoints
@@ -25,20 +22,32 @@ $screen-lg-max: 1200px;
 $screen-xl-min: $screen-lg-max;
 
 
-
-/* font weights */
+/* fonts  */
 $font-family-sans-serif: 'Open Sans', sans-serif;
 $font-family-base: $font-family-sans-serif;
 $font-size-base: 16px;
+$base-font-color: $grey;
+
 
 $headings-font-weight: 600;
 
-
-
-
 /* Layout */
-$lg-max-width: 960px;/* 960px % 16px */
+$lg-max-width: $screen-md-max;/* 960px % 16px */
 
 /* sections */
 $site-title-size: 3em;
 $section-title-size: 2em;
+
+/* social colors */
+$github-color: $grey-dark;
+$linkedin-color: #007bb5;
+$twitter-color: #55acee;
+$instagram-color: #9b6954;
+$spotify-color: #00e461;
+$social-colors : (
+  "github": $github-color,
+  "linkedin": $linkedin-color,
+  "twitter": $twitter-color,
+  "instagram": $instagram-color,
+  "spotify": $spotify-color
+);

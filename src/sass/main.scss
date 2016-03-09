@@ -1,9 +1,10 @@
 @import "lib/normalize/normalize";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import "fonts";
 @import "variables";
 @import "layout";
 @import "mixins";
 @import "typography";
 @import "structure";
 @import "navigation";
+@import "social";
 @import "blog";

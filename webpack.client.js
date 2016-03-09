@@ -1,5 +1,6 @@
 var path = require('path');
 var autoprefixer = require('autoprefixer');
+
 module.exports = {
   entry: {
     src: ["./src/entry.js"]
@@ -23,6 +24,10 @@ module.exports = {
       {
         test: /\.html$/,
         loader: "html"
+      },
+      {
+        test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        loader : 'file-loader?name=[path][name]-[hash].[ext]'
       }
     ]
   },
