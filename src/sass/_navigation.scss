@@ -6,12 +6,17 @@ nav {
 }
 
 .main-navigation {
+  padding-top: 1em;
+  width: 100%;
   @include center;
   ul {
+    margin: 0 auto;
     li{
       display: inline;
-      line-height: 1em;
       padding: 0 1em;
+      @media screen and (max-width: $screen-xs-max) {
+        display: block;
+      }
       a{
         color: $grey-light; // Change to a variable
         transition: color .2s linear;
@@ -20,6 +25,11 @@ nav {
           color: $grey;
         }
       }
+    }
+    &:after{
+      content: '';
+      display: table;
+      clear: both;
     }
   }
 }

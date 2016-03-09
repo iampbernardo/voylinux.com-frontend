@@ -1,24 +1,27 @@
 ul.social-list {
   padding: 0;
   list-style: none;
+  /*
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
+  */
   margin: 0 auto;
   @media screen and (max-width: $screen-xs-max) {
-    width: 80%;
+    width: 100%;
   }
   @media screen and (min-width: $screen-sm-min) {
     width: 50%;
   }
   @media screen and (min-width: $screen-md-min) {
-    width: 30%;
+    width: 40%;
   }
   li {
-    flex: 1;
+    /*flex: 1;*/
     font-size: 2em;
+    display: inline;
     a {
       padding: 0 .5em;
       i{
