@@ -4,19 +4,32 @@ ul.social-list {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 20%;
+  flex-wrap: wrap;
+  align-content: space-between;
   margin: 0 auto;
+  @media screen and (max-width: $screen-xs-max) {
+    width: 80%;
+  }
+  @media screen and (min-width: $screen-sm-min) {
+    width: 50%;
+  }
+  @media screen and (min-width: $screen-md-min) {
+    width: 30%;
+  }
   li {
     flex: 1;
     font-size: 2em;
     a {
+      padding: 0 .5em;
       i{
         color: $grey-medium;
-        transition: color .12s linear;
-        @each $social in github, linkedin, instagram, spotify {
+        transition: all .12s linear;
+
+        @each $social in github, twitter, linkedin, instagram, spotify {
           &.fa-#{$social} {
             &:hover {
               color: #{map-get($social-colors, $social)};
+              transform: scale(1.3);
             }
           }
         }
